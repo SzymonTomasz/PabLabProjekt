@@ -1,0 +1,13 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "Web"; 
+import "google/protobuf/empty.proto"; 
+package statistics; 
+
+service Statistics { 
+  rpc GetStatistics(google.protobuf.Empty) returns (GetStatisticsResponse) {} 
+}
+
+message GetStatisticsResponse { 
+  int32 counter = 1;
+}
