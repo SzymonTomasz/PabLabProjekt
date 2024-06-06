@@ -1,0 +1,6 @@
+@PabLabProjekt_HostAddress = http://localhost:5227
+
+GET {{PabLabProjekt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
