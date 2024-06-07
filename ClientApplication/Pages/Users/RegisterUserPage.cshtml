@@ -1,0 +1,14 @@
+﻿@page
+@model ClientApplication.Pages.Users.RegisterUserPageModel
+@{
+}
+<form method="post">
+    <div asp-validation-summary=All class="text-danger"></div>
+    <label asp-for="UserData.Username">Login</label>
+    <input asp-for="UserData.Username" />
+    <label asp-for="UserData.Email">Adres email</label>
+    <input asp-for="UserData.Email" />
+    <label asp-for="UserData.Password">Hasło</label>
+    <input asp-for="UserData.Password" type="password" />
+    <button type="submit">Zarejestruj nowego użytkownika</button>
+</form>

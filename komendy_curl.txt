@@ -1,0 +1,51 @@
+
+Download Locations list:
+curl -X GET "https://localhost:7101/api/Locations/Get" -H "Authorization: Bearer <JWT>"
+
+Download single Location:
+curl -X GET "https://localhost:7101/api/Locations/Get/1" -H "accept: application/json" -H "Authorization: Bearer <JWT>"
+
+Add new Location:
+curl -X POST "https://localhost:7101/api/Locations/Post" -H "Content-Type: application/json" -H "Authorization: Bearer <JWT>" -d "{\"Id\": \"1\", \"name\": \"Kraków\"}"
+
+Edit existing Location:
+curl -X PUT "https://localhost:7101/api/Locations/Put/1" -H "Content-Type: application/json" -H "Authorization: Bearer <JWT>" -d "{\"Id\": \"1\", \"name\": \"Wrocław\"}"
+
+Remove existing Location:
+curl -X DELETE "https://localhost:7101/api/Locations/Delete/1" -H "Authorization: Bearer <JWT>"
+
+
+
+
+Download Animals list:
+curl -X GET "https://localhost:7101/api/Animals/Get" -H "accept: application/json" -H "Authorization: Bearer <JWT>"
+
+Download single Animal:
+curl -X GET "https://localhost:7101/api/Animals/Get/1" -H "accept: application/json" -H "Authorization: Bearer <JWT>"
+
+Add new Animal:
+curl -X POST "https://localhost:7101/api/Animals/Post" -H "Content-Type: application/json" -H "Authorization: Bearer <JWT>" -d "{\"Id\": \"1\", \"name\": \"Pies\"}"
+
+Edit existing Animals:
+curl -X PUT "https://localhost:7101/api/Animals/Put/1" -H "Content-Type: application/json" -H "Authorization: Bearer <JWT>" -d "{\"Id\": \"1\", \"name\": \"Kot\"}"
+
+Remove existing Animal:
+curl -X DELETE "https://localhost:7101/api/Animals/Delete/1" -H "Authorization: Bearer <JWT>"
+
+
+
+
+Download Zoos list:
+curl -X GET "https://localhost:7101/api/Zoos/Get" -H "accept: application/json" -H "Authorization: Bearer <JWT>"
+
+Download single Zoo:
+curl -X GET "https://localhost:7101/api/Zoos/Get/1" -H "accept: application/json" -H "Authorization: Bearer <JWT>"
+
+Add new Zoo:
+curl -X POST "https://localhost:7101/api/Zoos/Post" -H "Content-Type: application/json" -H "Authorization: Bearer <JWT>" -d "{\"Id\": \"1\", \"name\": \"Zoo Kraków\", \"description\": \"Opis Zoo\", \"locationId\": \"1\"}"
+
+Edit existing Zoo:
+curl -X PUT "https://localhost:7101/api/Zoos/Put/1" -H "Content-Type: application/json" -H "Authorization: Bearer <JWT>" -d "{\"Id\": \"1\", \"name\": \"Zoo Wrocław\", \"description\": \"Nowy opis Zoo\", \"locationId\": \"1\"}"
+
+Remove existing Zoo:
+curl -X DELETE "https://localhost:7101/api/Zoos/Delete/1" -H "Authorization: Bearer <JWT>"
